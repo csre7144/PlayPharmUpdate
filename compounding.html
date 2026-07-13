@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Playa Pharmacy Compounding</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- Favicon -->
+    <link href="img/logo/Playa_logo_Icon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet"> 
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+    <style>
+        
+        .swiper-section > .container {
+
+        width: 100%; 
+        height:300px;
+        margin-left: auto; 
+        margin-right: auto;
+        /*   display: flex; */
+        }
+        /* Mobile */
+        @media (max-width: 768px) {
+            .swiper-section > .container {
+                height: 200px;
+            }
+        }
+        .swiper-slide{
+            width: 100%;
+            height: 100%;
+        }
+        .swiper-slide img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;   /* Makes image cover the slide */
+            display: block;
+        }
+        /* .swiper-section > .container > .title-box {
+        max-width: 300px; width: 100%;
+        } */
+        .swiper-section > .container >.swiper {
+        /*   width: 600px; height: 300px; */
+        height: 100%;
+        }
+        
+        .swiper-scrollbar {
+            background: #e0e0e0;
+            height: 6px;
+            border-radius: 10px;
+        }
+        .swiper-scrollbar-drag {
+            background: #008037 !important;
+            border-radius: 10px;
+            padding: 5px 0;
+            top: -4px;
+        }
+        .swiper {
+            cursor: grab;
+        }
+
+        .swiper:active {
+            cursor: grabbing;
+        }
+
+        .swiper-button-prev,
+        .swiper-button-next{
+            width: 45px;
+            height: 45px;
+            background: #085371;
+            border-radius: 50%;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            color: #fff;
+            top: 60%;
+            transform: translateY(-50%);
+        }
+        /* Move buttons inside slider */
+        .swiper-button-prev{
+            left: 2px;
+        }
+
+        .swiper-button-next{
+            right: 2px;
+        }
+
+        /* Make arrow icon smaller */
+        .swiper-button-prev::after,
+        .swiper-button-next::after{
+            font-size: 18px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-primary m-1" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+        <div class="spinner-grow text-dark m-1" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+        <div class="spinner-grow text-secondary m-1" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Topbar Start -->
+    <div class="container-fluid bg-light ps-5 pe-0 d-none d-lg-block">
+        <div class="row gx-0">
+            <div class="col-md-6 text-center text-lg-start mb-2 mb-lg-0">
+                <div class="d-inline-flex align-items-center">
+                    <small class="py-2" style="color: black; font-weight: bold; font-size: 16px;"><i class="far fa-clock me-2" style="color: #085371;"></i>Opening Hours: Monday to Friday : 9am - 6.30pm, Saturday : 10am to 3pm, <span style="color: red;">Sunday Closed</span> </small>
+                </div>
+            </div>
+            <div class="col-md-6 text-center text-lg-end">
+                <div class="position-relative d-inline-flex align-items-center text-white top-shape px-5" style="background-color: #085371;">
+                    <div class="me-3 pe-3 border-end py-2">
+                        <p class="m-0"><i class="fa fa-envelope-open me-2"></i>playapharmacy10@gmail.com</p>
+                    </div>
+                    <div class="py-2">
+                        <p class="m-0"><i class="fa fa-phone-alt me-2"></i>+1 (310) 823-4500</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light shadow-sm px-5 py-3 py-lg-0">
+        <a href="index.html" class="navbar-brand p-0">
+             <img src="img/logo/Playa_logo_Photoroom.png" class="d-block" alt="...">
+
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto py-0">
+                <a href="index.html" class="nav-item nav-link">Home</a>
+                 
+            </div>
+            <div class="dropdown">
+                <button class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" >About</button>
+                <ul class="dropdown-menu dropdown-menu-dark">
+                    <li><a class="dropdown-item" href="about.html">About Us</a></li>
+                    <li><a class="dropdown-item active" href="compounding.html">About Compounding</a></li>
+                </ul>
+            </div>
+
+            <div class="dropdown">
+                <button class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" >Services</button>
+                <ul class="dropdown-menu dropdown-menu-dark">
+                    <li><a class="dropdown-item" href="prescriptions.html">Prescriptions & Delivery</a></li>
+                    <li><a class="dropdown-item" href="immunizations.html">Immunization</a></li>
+                    <li><a class="dropdown-item" href="wellness.html">Wellness & Support</a></li>
+                </ul>
+            </div>
+
+            <div class="dropdown">
+                <button class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" >Specialties</button>
+                <ul class="dropdown-menu dropdown-menu-dark">
+                    <li><a class="dropdown-item" href="anti-aging.html">Anti-Aging</a></li>
+                    <li><a class="dropdown-item" href="dental_health.html">Dental Health</a></li>
+                    <li><a class="dropdown-item" href="dermatology.html">Dermatology</a></li>
+                    <li><a class="dropdown-item" href="gastrointestinal.html">Gastrointestinal Health</a></li> 
+                    <li><a class="dropdown-item" href="hairLoss.html">Hair Loss</a></li>
+                    <li><a class="dropdown-item" href="hormone.html">Hormone Therapy</a></li>
+                    <li><a class="dropdown-item" href="lowDose.html">Low Dose Naltrexone</a></li>
+                    <li><a class="dropdown-item" href="pain_management.html">Pain Management</a></li>
+                    <li><a class="dropdown-item" href="pediatrics.html">Pediatrics</a></li>
+                    <li><a class="dropdown-item" href="pet_medicine.html">Pet Medicine</a></li>
+                    <li><a class="dropdown-item" href="weight_management.html">Weight Management</a></li>
+                    <li><a class="dropdown-item" href="wound_care.html">Wound & Scar Care</a></li>
+                </ul>
+            </div>
+
+            <div class="navbar-nav">
+                <a href="prescribers.html" class="nav-item nav-link">For Prescibers</a>
+            </div>
+            
+            
+            <a href="contact.html" class="btn py-2 px-4">Contact Us</a>
+        </div>
+    </nav>
+    <!-- End Navbar -->
+
+
+    <!-- Hero Start -->
+    <div class="container-fluid py-1 hero-header mb-5">
+        <div class="row py-3">
+            <div class="col-12 text-center">
+                <h1 class="display-3 text-white animated zoomIn">Compounding</h1>
+                <!-- <a href="" class="h4 text-white">Home</a>
+                <i class="far fa-circle text-white px-2"></i>
+                <a href="" class="h4 text-white">About</a> -->
+            </div>
+        </div>
+    </div>
+    <!-- Hero End -->
+
+
+    <!-- About Start -->
+    <section>
+        <div class="container wow fadeInUp custom-width" data-wow-delay="0.1s">
+            <div class="container">
+                <div class="compound_about">
+                    <div class="row">
+                        <div class="col-lg-12 mb-4">
+                            <div class="section-title2">
+                                <img src="img/Compounding_mmm.jpg" alt="img-fluid" class="img-fluid">
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="section-title mb-4">
+                                <h2 class=" mb-0">What is Compounding?</h2>                               
+                            </div>
+                            <div class="compound_about_paragraph">
+                                <div class="section-title">
+                                    <p class="mb-4" style="font-size: 20px;">Pharmaceutical compounding is the art and science of customizing medications to meet the specific needs of individual patients. Unlike standard, commercially available drugs, compounded medications are prepared by licensed pharmacists to provide personalized doses, unique formulations, or alternative delivery methods.</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-lg-12 mb-4">
+                            <div class="compound_about_paragraph">
+                                <div class="section-title">
+                                    <h2 class="mb-4">Why would someone need a compounded medication?</h2>
+                                    <p>Compounding is ideal for patients who need a solution that standard medications can’t provide. Examples include:
+                                    </p>
+                                    <ul style="font-size: 20px;">
+                                            <li><span style="font-weight: bold;">Unique dosage strengths</span> not available commercially</li>
+                                            <li><span style="font-weight: bold;">Alternative forms</span> (creams, gels, liquids, or troches) for easier administration</li>
+                                            <li><span style="font-weight: bold;">Allergy-friendly formulations</span> free from dyes, preservatives, or gluten</li>
+                                            <li><span style="font-weight: bold;">Discontinued or unavailable medications</span></li>
+                                            <li><span style="font-weight: bold;">Specialized treatments</span> for children, seniors, or pets</li>
+                                        </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-12 mb-4">
+                            <div class="compound_about_paragraph">
+                                <div class="section-title">
+                                    <h2 class="mb-4">What types of compounded medications are available?</h2>
+                                    <p>Compounded medications can be customized in many forms, including:</p>
+                                    <ul style="font-size: 20px;">
+                                            <li><span style="font-weight: bold;">Topical creams and gels</span> for dermatology or pain relief</li>
+                                            <li><span style="font-weight: bold;">Oral capsules or liquids</span> for precise dosing</li>
+                                            <li><span style="font-weight: bold;">Sublingual troches or lozenges</span> for faster absorption</li>
+                                            <li><span style="font-weight: bold;">Suppositories</span> for GI or hormone therapies</li>
+                                            <li><span style="font-weight: bold;">Specialty formulations</span>  tailored to hormone therapy, wound care, pediatric care, or chronic conditions</li>
+
+                                        </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-12 mb-4">
+                            <div class="compound_about_paragraph">
+                                <div class="section-title">
+                                    <h2 class="mb-4">Is compounding safe?</h2>
+                                    <p>Yes. Compounded medications are prepared in strictly controlled environments using high-quality, FDA-compliant ingredients. Our pharmacists follow USP standards and best practices to ensure safety, consistency, and effectiveness for every patient.</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-lg-12 mb-4">
+                            <div class="compound_about_paragraph">
+                                <div class="section-title">
+                                    <h2 class="mb-4">Who benefits from compounded medications?</h2>
+                                    <p>Compounding can help a wide range of patients, including:</p>
+                                    <ul style="font-size: 20px;">
+                                            <li><span style="font-weight: bold;">Children</span> needing flavored or liquid medications</li>
+                                            <li><span style="font-weight: bold;">Adults</span> requiring customized hormone therapy</li>
+                                            <li><span style="font-weight: bold;">Patients with allergies or sensitivities</span></li>
+                                            <li><span style="font-weight: bold;">Individuals with chronic or hard-to-treat conditions</span></li>
+                                            <li><span style="font-weight: bold;">Those who need medications in a non-standard form or dose</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-12 mb-4">
+                            <div class="compound_about_paragraph">
+                                <div class="section-title">
+                                    <h2 class="mb-4">How do I get a compounded medication?</h2>
+                                    <p>All compounded medications require a prescription from a licensed healthcare provider. Our pharmacists work closely with your doctor to create a personalized medication that meets your specific needs, ensuring maximum safety and effectiveness.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-12">
+                            <div class="compound_about_paragraph">
+                                <div class="section-title">
+                                    <h2 class="mb-4">Why choose a compounding pharmacy?</h2>
+                                    <p>Compounding allows for true personalized medicine, giving patients options that aren’t available in standard pharmacies. With compounding:</p>
+                                    <ul style="font-size: 20px;">
+                                            <li>Every medication is tailored to the individual</li>
+                                            <li><span style="font-weight: bold;">Adults</span> requiring customized hormone therapy</li>
+                                            <li>Ingredients are custom-selected for safety and tolerance</li>
+                                            <li>Dosages and delivery forms are designed for optimal results</li>
+                                        </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About End -->
+
+
+
+
+    <!-- slider Cards -->
+    <!-- <section class="container my-5">
+        <div class="swiper-section swiper-section-1">
+            <div class="container">
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide swiper-slide-1"> <img src="img/carousel-1.jpg" alt="img-fluid"> </div>
+                        <div class="swiper-slide swiper-slide-2"> <img src="img/carousel-1.jpg" alt="img-fluid"> </div>
+                        <div class="swiper-slide swiper-slide-3"> <img src="img/carousel-1.jpg" alt="img-fluid"> </div>
+                        <div class="swiper-slide swiper-slide-4"> <img src="img/carousel-1.jpg" alt="img-fluid"> </div>
+                    </div>
+
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+
+                    <div class="swiper-scrollbar"></div>
+                </div>
+            </div>
+
+        </div>
+    </section> -->
+    <!-- End -->
+    
+
+    <!-- Footer Start -->
+    <div class="container-fluid text-light pb-4 mt-2" style="background-color: #085371;">
+        <div class="container pt-5">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <img src="img/logo/Playa_logo_Photoroom.png" alt="img_footer" class="img_footer">
+                </div>
+                <div class="col-lg-3 col-md-6 quick-links-padding">
+                    <h3 class="text-white mb-4">Quick Links</h3>
+                    <div class="d-flex flex-column justify-content-start">
+                        <a class="text-light mb-2" href="index.html">Home</a>
+                        <a class="text-light mb-2" href="about.html">About Us</a>
+                        <a class="text-light mb-2" href="#faq_selection">FAQ</a>
+                        <a class="text-light mb-2" href="prescribers.html">For Prescribers</a>
+                        <a class="text-light mb-2" href="contact.html">Contact Us</a>
+                        <a class="text-light mb-2" href="policy.html">Privacy Policy</a>
+                        <a class="text-light" href="term.html">Term and Conditions</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h3 class="text-white mb-4">Get In Touch</h3>
+                    <div class="row">
+                        <p class="mb-2 d-flex align-items-start">
+                            <i class="bi bi-geo-alt text-primary me-2 mt-1"></i>
+                            <span>8131 W. Manchester Ave. Playa Del Rey, CA 90293</span>
+                        </p>
+                    </div>
+                    <p class="mb-2 d-flex align-items-center">
+                        <i class="bi bi-envelope-open text-primary me-2"></i>
+                        <a href="mailto:playapharmacy10@gmail.com" style="color: #EEF9FF;">
+                            playapharmacy10@gmail.com
+                        </a>
+                    </p>
+
+                    <p class="mb-0 d-flex align-items-center">
+                        <i class="bi bi-telephone text-primary me-2"></i>
+                        <a href="tel:+13108234500" style="color: #EEF9FF;">
+                            Phone: +1 (310) 823-4500
+                        </a>
+                    </p>
+
+                    <p class="mb-0 d-flex align-items-center">
+                        <i class="bi bi-telephone text-primary me-2"></i>
+                        <a href="tel:+13108235700" style="color: #EEF9FF;">
+                            Fax: +1 (310) 823-5700
+                        </a>
+                    </p>
+                </div>
+                
+                <div class="col-lg-3 col-md-6 ft_social">
+                    <h3 class="text-white mb-4">Follow Us</h3>
+                    <div class="d-flex">
+                        <a class="btn btn-lg btn-primary btn-lg-square rounded me-2" href="https://www.yelp.com/biz/playa-pharmacy-playa-del-rey-11" target="_blank"><i class="fab fa-yelp fw-normal"></i></a>
+                        <a class="btn btn-lg btn-primary btn-lg-square rounded me-2" href="https://www.facebook.com/playapharmacy/" target="_blank"><i class="fab fa-facebook-f fw-normal"></i></a>
+                        <a class="btn btn-lg btn-primary btn-lg-square rounded me-2" href="https://www.indeed.com/cmp/Playa-Pharmacy" target="_blank"><i class="fab fa-linkedin-in fw-normal"></i></a>
+                        <a class="btn btn-lg btn-primary btn-lg-square rounded" href="https://www.instagram.com/playapharmacy/" target="_blank"><i class="fab fa-instagram fw-normal"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid text-light py-4" style="background: #008037;">
+        <div class="container">
+            <div class="row g-0">
+                <div class=" text-center text-md-center">
+                    <p class="mb-md-0">&copy; Copyright 2026, Playa Pharmacy, All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    <script>
+        const swiper = new Swiper(".swiper", {
+    direction: "horizontal",
+    loop: false,
+
+    spaceBetween: 10,
+    grabCursor: true,   // shows grab hand cursor
+
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev"
+    },
+
+    scrollbar: {
+        el: ".swiper-scrollbar",
+        draggable: true   // enable drag scrollbar
+    },
+
+    breakpoints: {
+        0: {
+            slidesPerView: 1
+        },
+        768: {
+            slidesPerView: 2
+        },
+        1024: {
+            slidesPerView: 3
+        }
+    }
+});
+
+    
+    </script>
+</body>
+
+</html>
