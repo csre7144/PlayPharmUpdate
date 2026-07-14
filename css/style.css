@@ -393,19 +393,19 @@ h6,
 
 
 .banner-row .image-col .slide_img_1{
-    background-image: url('../img/banner/banner2.webp');
+    /* background-image: url('../img/banner/banner2.webp'); */
     background-repeat: no-repeat;
     /* background-position: center center; */
     background-position: 20% 10%; /* X% Y% */
     background-size: cover;
-    min-height: 700px;
+    /* min-height: 700px; */
 }
 .banner-row .image-col .slide_img_2 .img{
     /* background-image: url('../img/banner/banner1.webp'); */
     background-repeat: no-repeat;
     background-position: 20% 10%; /* X% Y% */
     background-size: cover;
-    min-height: 700px;
+    /* min-height: 700px; */
 }
 @media screen and (max-width: 480px) {
     .banner-row .image-col .slide_img_1, .banner-row .image-col .slide_img_2{
