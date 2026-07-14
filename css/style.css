@@ -274,10 +274,10 @@ h6,
     }
 }
 
-.img_footer{
+/* .img_footer{
 
     max-width: 100%;
-}
+} */
 @media (max-width: 768px){
     .banner_pg_i{
         padding-left: 44px;
