@@ -85,7 +85,7 @@ h6,
     color: #FFFFFF;
 }
 
-#spinner {
+/* #spinner {
     opacity: 0;
     visibility: hidden;
     transition: opacity .5s ease-out, visibility 0s linear .5s;
@@ -103,7 +103,7 @@ h6,
     height: 1px;
     overflow: hidden;
     clip: rect(0, 0, 0, 0);
-}
+} */
 .back-to-top {
     position: fixed;
     display: none;
