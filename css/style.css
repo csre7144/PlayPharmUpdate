@@ -400,8 +400,8 @@ h6,
     background-size: cover;
     min-height: 700px;
 }
-.banner-row .image-col .slide_img_2{
-    background-image: url('../img/banner/banner1.webp');
+.banner-row .image-col .slide_img_2 .img{
+    /* background-image: url('../img/banner/banner1.webp'); */
     background-repeat: no-repeat;
     background-position: 20% 10%; /* X% Y% */
     background-size: cover;
