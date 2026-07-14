@@ -598,7 +598,7 @@ h6,
 }
 
 .bannerbg2 .bannerbg2_img img{
-    width: 300px;
+    /* width: 300px; */
     border: 1px solid black;
     border-radius: 50%;
 }
