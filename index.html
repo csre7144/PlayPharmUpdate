@@ -3,13 +3,13 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Playa Pharmacy</title>
+    <title>Playa Pharmacy | Compounding & Full-Service Pharmacy | Playa del Rey, CA</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta name="description" content="Playa Pharmacy - award-winning compounding and full-service pharmacy in Playa del Rey, CA. Free delivery, direct pharmacist access, HSA/FSA eligible compounds.">
     <meta name="keywords" content="Playa Pharmacy, compounding pharmacy, full-service pharmacy, Playa del Rey, CA, prescription medications, free delivery, HSA, FSA, pharmacist">
 
     <!-- Favicon -->
-    <link href="img/logo/Playa_logo_Icon.ico" rel="icon">
+    <link href="img/logo/Playa_logo_Icon.webp" rel="icon">
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -20,13 +20,89 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
     <!-- Libraries Stylesheet -->
-    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/animate/animate.min.css" rel="stylesheet" media="print" onload="this.media='all'">
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Pharmacy",
+        "name": "Playa Pharmacy",
+        "url": "https://playapharmacy.com",
+        "telephone": "+13108234500",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "8131 W. Manchester Ave.",
+            "addressLocality": "Playa Del Rey",
+            "addressRegion": "CA",
+            "postalCode": "90293",
+            "addressCountry": "US"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 33.9587,
+            "longitude": -118.4412
+        },
+        "openingHoursSpecification": [
+            {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+                "https://schema.org/Monday",
+                "https://schema.org/Tuesday",
+                "https://schema.org/Wednesday",
+                "https://schema.org/Thursday",
+                "https://schema.org/Friday"
+            ],
+            "opens": "09:00",
+            "closes": "18:30"
+            },
+            {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": "https://schema.org/Saturday",
+            "opens": "10:00",
+            "closes": "15:00"
+            }
+        ],
+        "areaServed": [
+            "Playa del Rey",
+            "Playa Vista",
+            "Westchester",
+            "Marina del Rey",
+            "El Segundo"
+        ],
+        "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "itemListElement": [
+            {
+                "@type": "Offer",
+                "itemOffered": {
+                "@type": "Service",
+                "name": "Walk-In Immunizations"
+                }
+            },
+            {
+                "@type": "Offer",
+                "itemOffered": {
+                "@type": "Service",
+                "name": "Compounding Pharmacy"
+                }
+            },
+            {
+                "@type": "Offer",
+                "itemOffered": {
+                "@type": "Service",
+                "name": "Free Prescription Delivery"
+                }
+            }
+            ]
+        }
+    }
+    </script>
 
     <style>
     /* Slow down carousel slide animation */
@@ -262,7 +338,7 @@
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg bg-white navbar-light shadow-sm px-5 py-3 py-lg-0">
         <a href="index.html" class="navbar-brand p-0">
-             <img src="img/logo/Playa_logo_Photoroom.png" class="d-block" alt="...">
+             <img src="img/logo/Playa_logo.webp" class="d-block" alt="Playa_logo" loading="lazy" width="200" height="113">
 
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
@@ -293,13 +369,13 @@
             <div class="dropdown">
                 <button class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" >Specialties</button>
                 <ul class="dropdown-menu dropdown-menu-dark">
-                    <li><a class="dropdown-item" href="anti-aging.html">Anti-Aging</a></li>
+                    <li><a class="dropdown-item" href="anti_aging.html">Anti-Aging</a></li>
                     <li><a class="dropdown-item" href="dental_health.html">Dental Health</a></li>
                     <li><a class="dropdown-item" href="dermatology.html">Dermatology</a></li>
                     <li><a class="dropdown-item" href="gastrointestinal.html">Gastrointestinal Health</a></li> 
                     <li><a class="dropdown-item" href="hairLoss.html">Hair Loss</a></li>
                     <li><a class="dropdown-item" href="hormone.html">Hormone Therapy</a></li>
-                    <li><a class="dropdown-item" href="lowDose.html">Low Dose Naltrexone</a></li>
+                    <li><a class="dropdown-item" href="low_dose.html">Low Dose Naltrexone</a></li>
                     <li><a class="dropdown-item" href="pain_management.html">Pain Management</a></li>
                     <li><a class="dropdown-item" href="pediatrics.html">Pediatrics</a></li>
                     <li><a class="dropdown-item" href="pet_medicine.html">Pet Medicine</a></li>
@@ -319,56 +395,57 @@
     <!-- Navbar End -->
 
 
-
-    <!-- Slider -->
+    <main>
+        <!-- Slider -->
         <!-- <div class="container-fluid mb-5 wow fadeIn" data-wow-delay="0.1s" style="padding-right: 0; padding-left: 0;"> -->
-    <section class="hme_banner_pg">
-        <div class="mb-5">
-            <div id="carouselExampleIndicators"
-                class="carousel slide"
-                data-bs-ride="carousel"
-                data-bs-interval="7000"
-                data-bs-pause="false">
+        <section class="hme_banner_pg">
+            <div class="mb-5">
+                <div id="carouselExampleIndicators"
+                    class="carousel slide"
+                    data-bs-ride="carousel"
+                    data-bs-interval="7000"
+                    data-bs-pause="false">
 
-                <div class="carousel-inner">
-                    <!-- Slide 2 -->
-                    <div class="carousel-item active">
-                        <div class="banner_pg">
-                            <div class="row banner-row">
+                    <div class="carousel-inner">
+                        <!-- Slide 2 -->
+                        <div class="carousel-item active">
+                            <div class="banner_pg">
+                                <div class="row banner-row">
 
-                                <div class="col-lg-6 col-md-12 ">
-                                    <div class="image-col">
-                                        <div class="slide_img_2"></div>
+                                    <div class="col-lg-6 col-md-12 ">
+                                        <div class="image-col">
+                                            <div class="slide_img_2" width="800" height="533" fetchpriority="high"></div>
+                                        </div>
                                     </div>
-                                </div>
 
-                                <div class="col-lg-6 col-md-12 p-5 text-col">
-                                    <div class="carousel_ppg">
-                                        <div class="section-title mb-4">
-                                            <h1 class="display-5 mb-5" style="color:#085371;">
-                                                One Place For All Your Compounding Needs.
-                                            </h1>
+                                    <div class="col-lg-6 col-md-12 p-5 text-col">
+                                        <div class="carousel_ppg">
+                                            <div class="section-title mb-4">
+                                                <h1 class="display-5 mb-5" style="color:#085371;">
+                                                    One Place For All Your Compounding Needs.
+                                                </h1>
 
-                                            <h4 class="text-body mb-5">
-                                            Your health is unique—and your medications should be too. When standard options aren't suitable, we create personalized formulations designed around your comfort, safety, and treatment goals.
-                                            </h4>
+                                                <h4 class="text-body mb-5">
+                                                Your health is unique—and your medications should be too. When standard options aren't suitable, we create personalized formulations designed around your comfort, safety, and treatment goals.
+                                                </h4>
 
-                                            <div class="check_list">
-                                                <div class="item">
-                                                    <div class="check"></div>
-                                                    Doctor Prescribed Custom Medications
-                                                </div>
-                                                <div class="item">
-                                                    <div class="check"></div>
-                                                    Tailored Strengths & Dosage Forms
-                                                </div>
-                                                <div class="item">
-                                                    <div class="check"></div>
-                                                    Patient-Centric Formulations
-                                                </div>
-                                                <div class="item">
-                                                    <div class="check"></div>
-                                                    Quality & Safety Standards
+                                                <div class="check_list">
+                                                    <div class="item">
+                                                        <div class="check"></div>
+                                                        Doctor Prescribed Custom Medications
+                                                    </div>
+                                                    <div class="item">
+                                                        <div class="check"></div>
+                                                        Tailored Strengths & Dosage Forms
+                                                    </div>
+                                                    <div class="item">
+                                                        <div class="check"></div>
+                                                        Patient-Centric Formulations
+                                                    </div>
+                                                    <div class="item">
+                                                        <div class="check"></div>
+                                                        Quality & Safety Standards
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -376,526 +453,555 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
 
 
-                    <!-- Slide 1 -->
-                    <div class="carousel-item">
-                        <div class="banner_pg">
-                            <div class="row banner-row">
+                        <!-- Slide 1 -->
+                        <div class="carousel-item">
+                            <div class="banner_pg">
+                                <div class="row banner-row">
 
-                                <!-- TEXT (after image on mobile) -->
-                                <div class="col-lg-6 col-md-12 p-5 text-col">
-                                    <div class="carousel_ppg">
-                                        <div class="section-title mb-4">
-                                            <h1 class="display-5 mb-5" style="color:#085371;">
-                                                Playa Pharmacy That You Can Trust
-                                            </h1>
-                                            <h4 class="text-body mb-5">
-                                            Playa Pharmacy is an award-winning, family-owned pharmacy in the heart of Playa del Rey - where personalized care isn't a promise on a poster. It's what happens every time you walk through the door.
-                                            </h4>
+                                    <!-- TEXT (after image on mobile) -->
+                                    <div class="col-lg-6 col-md-12 p-5 text-col">
+                                        <div class="carousel_ppg">
+                                            <div class="section-title mb-4">
+                                                <h1 class="display-5 mb-5" style="color:#085371;">
+                                                    Playa Pharmacy That You Can Trust
+                                                </h1>
+                                                <h4 class="text-body mb-5">
+                                                Playa Pharmacy is an award-winning, family-owned pharmacy in the heart of Playa del Rey - where personalized care isn't a promise on a poster. It's what happens every time you walk through the door.
+                                                </h4>
 
 
-                                            <div class="check_list">
-                                                <div class="item">
-                                                    <div class="check"></div>
-                                                    Free Delivery For All Orders
-                                                </div>
-                                                <div class="item">
-                                                    <div class="check"></div>
-                                                     HSA/FSA eligible Compounds
-                                                </div>
-                                                <div class="item">
-                                                    <div class="check"></div>
-                                                    Friendly Services
-                                                </div>
-                                                <div class="item">
-                                                    <div class="check"></div>
-                                                    On-time Refills
+                                                <div class="check_list">
+                                                    <div class="item">
+                                                        <div class="check"></div>
+                                                        Free Delivery For All Orders
+                                                    </div>
+                                                    <div class="item">
+                                                        <div class="check"></div>
+                                                        HSA/FSA eligible Compounds
+                                                    </div>
+                                                    <div class="item">
+                                                        <div class="check"></div>
+                                                        Friendly Services
+                                                    </div>
+                                                    <div class="item">
+                                                        <div class="check"></div>
+                                                        On-time Refills
+                                                    </div>
                                                 </div>
                                             </div>
+
+                                            
                                         </div>
-
-                                        
+                                    </div>
+                                    <!-- IMAGE (first on mobile) -->
+                                    <div class="col-lg-6 col-md-12">
+                                        <div class="image-col">
+                                            <div class="slide_img_1" width="800" height="533" fetchpriority="high"></div>
+                                        </div>
+                                        <!-- <img class="img-fluid rounded wow zoomIn"
+                                            data-wow-delay="0.9s"
+                                            src="img/banner/slider0001.jpg"> -->
                                     </div>
                                 </div>
-                                <!-- IMAGE (first on mobile) -->
-                                <div class="col-lg-6 col-md-12">
-                                    <div class="image-col">
-                                        <div class="slide_img_1"></div>
-                                    </div>
-                                    <!-- <img class="img-fluid rounded wow zoomIn"
-                                        data-wow-delay="0.9s"
-                                        src="img/banner/slider0001.jpg"> -->
-                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Controls -->
+                    <!-- <button class="carousel-control-prev" type="button"
+                            data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="prev" aria-label="Previous slide">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+
+                    <button class="carousel-control-next" type="button"
+                            data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="next" aria-label="Next slide">
+                        <span class="carousel-control-next-icon"></span>
+                    </button> -->
+                    <!-- Previous -->
+                    <button
+                        class="carousel-control-prev"
+                        type="button"
+                        data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="prev"
+                        aria-label="Previous slide">
+
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous slide</span>
+                    </button>
+
+                    <!-- Next -->
+                    <button
+                        class="carousel-control-next"
+                        type="button"
+                        data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="next"
+                        aria-label="Next slide">
+
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next slide</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+        <!-- End Slider -->
+
+
+        <!-- Award Banner -->
+        <div class="bannerbg2 p-3 mt-4">
+            <div class="contianer-fliud m-5">
+                    <div class="row" >
+                        <div class="col-lg-6 col-md-12">
+                            <div class="bannerbg2_p">
+                                <!-- <h1 class="display-5">Award Winning Pharmacy <br>Best Of The Westside <br> 2nd Place</h1> -->
+                                <h2 class="display-4">Award Winning Pharmacy</h2>
+                                <h3 class="display-6">Thank You For Voting us the Best Pharmacy of Westside!</h3>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-12">
+                            <div class="bannerbg2_img">
+                                <img src="img/Award.webp" alt="Award" loading="lazy">
                             </div>
                         </div>
                     </div>
                 </div>
+        </div>
+        <!-- End Award Banner -->
 
-                <!-- Controls -->
-                <button class="carousel-control-prev" type="button"
-                        data-bs-target="#carouselExampleIndicators"
-                        data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon"></span>
+
+        
+        <!-- clickable slider -->
+        <!-- <div class="container-fluid m-2 pt-4 pb-5 wow fadeIn" data-wow-delay="0.1s"> -->
+        <div class="container-fluid pt-4 pb-5">
+            <div class="container position-relative">
+                
+                <div class="section-title mb-5">
+                    <h2 class="position-relative" style="color: #085371; display: block; text-align: center;">Our Compounding Services</h2>
+                    <!-- <p class="text-center m-2">Custom Soultions for Your Health</p> -->
+                </div>
+                <!-- Left Arrow -->
+                <button class="scroll-btn left" onclick="scrollRelated(-1)">
+                    &#10094;
                 </button>
 
-                <button class="carousel-control-next" type="button"
-                        data-bs-target="#carouselExampleIndicators"
-                        data-bs-slide="next">
-                    <span class="carousel-control-next-icon"></span>
+                <!-- Right Arrow -->
+                <button class="scroll-btn right" onclick="scrollRelated(1)">
+                    &#10095;
                 </button>
-            </div>
-        </div>
-    </section>
-    <!-- End Slider -->
 
-
-    <!-- Award Banner -->
-    <div class="bannerbg2 p-3 mt-4">
-        <div class="contianer-fliud m-5">
-                <div class="row" >
-                    <div class="col-lg-6 col-md-12">
-                        <div class="bannerbg2_p">
-                            <!-- <h1 class="display-5">Award Winning Pharmacy <br>Best Of The Westside <br> 2nd Place</h1> -->
-                            <h1 class="display-4">Award Winning Pharmacy</h1>
-                            <h3 class="display-6">Thank You For Voting us the Best Pharmacy of Westside!</h3>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-md-12">
-                        <div class="bannerbg2_img">
-                            <img src="img/1st_voted_bestofthe_westside.png" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-    </div>
-    <!-- End Award Banner -->
-
-
-    
-    <!-- clickable slider -->
-    <!-- <div class="container-fluid m-2 pt-4 pb-5 wow fadeIn" data-wow-delay="0.1s"> -->
-    <div class="container-fluid pt-4 pb-5">
-        <div class="container position-relative">
-            
-            <div class="section-title mb-5">
-                <h1 class="position-relative" style="color: #085371; display: block; text-align: center;">Our Compounding Services</h1>
-                <!-- <p class="text-center m-2">Custom Soultions for Your Health</p> -->
-            </div>
-            <!-- Left Arrow -->
-            <button class="scroll-btn left" onclick="scrollRelated(-1)">
-                &#10094;
-            </button>
-
-            <!-- Right Arrow -->
-            <button class="scroll-btn right" onclick="scrollRelated(1)">
-                &#10095;
-            </button>
-
-            <div class="card_grp">
-                <div id="relatedScroll" class="related-scroll d-flex">
-                    <div class="service-item">
-                        <div class="rounded-top overflow-hidden">
-                            <img src="img/list_compounding/hormone.jpg" alt="hormone" class="img-fluid mx-auto d-block" style="max-width: 100%">
-                        </div>
-                        <div class="position-relative bg-light rounded-botf.itemtom text-center p-4">
-                            <h4 class="m-1">Hormone Therapy</h4>
-                            <a href="hormone.html">Learn More</a>
-                            <!-- <p style="font-size: 22px;">Questions or concerns? Our pharmacists are always ready to help!</p> -->
-                        </div>
-                    </div>
-                    <div class="service-item">
-                        <div class="rounded-top overflow-hidden">
-                            <img src="img/list_compounding/anti_aging.jpeg" alt="anti_aging" class="img-fluid mx-auto d-block" style="max-width: 100%">
-                        </div>
-                        <div class="position-relative bg-light rounded-bottom text-center p-4">
-                            <h4 class="m-1">Anti-Aging</h4>
-                            <a href="Anti-Aging.html">Learn More</a>
-                            <!-- <p style="font-size: 22px;">Before you checkout, you can trust that we’ve checked-into any applicable discounts or credits. The difference can save you big dollars.</p> -->
-                        </div>
-                    </div>
-                    <div class="service-item">
-                                <div class="rounded-top overflow-hidden">
-                            <img src="img/list_compounding/pain_management.jpg" alt="pain_management" class="img-fluid mx-auto d-block" style="max-width: 100%">
-                        </div>
-                        <div class="position-relative bg-light rounded-bottom text-center p-4">
-                            <h4 class="m-1">Pain Management</h4>
-                            <a href="Pain_Management.html">Learn More</a>
-                            <!-- <p style="font-size: 22px;">Before you checkout, you can trust that we’ve checked-into any applicable discounts or credits. The difference can save you big dollars.</p> -->
-                        </div>
-                    </div>
-                    
-                    <div class="service-item">
-                        <div class="rounded-top overflow-hidden">
-                            <img src="img/list_compounding/dental_health.jpg" alt="dental_health" class="img-fluid mx-auto d-block" style="max-width: 100%">
-                        </div>
-                        <div class="position-relative bg-light rounded-bottom text-center p-4" >
-                            <h4 class="m-1">Dental Health</h4>
-                            <a href="dental_health.html">Learn More</a>
-                            <!-- <p style="font-size: 22px;">Questions or concerns? Our pharmacists are always ready to help!</p> -->
-                        </div>
-                    </div>
-                    <div class="service-item">
-                        <div class="rounded-top overflow-hidden">
-                            <img src="img/list_compounding/weight_management.jpg" alt="weight_management" class="img-fluid mx-auto d-block" style="max-width: 100%">
-                        </div>
-                        <div class="position-relative bg-light rounded-bottom text-center p-4" >
-                            <h4 class="m-1">Weight Management</h4>
-                            <a href="weight_management.html">Learn More</a>
-                            <!-- <p style="font-size: 22px;">Questions or concerns? Our pharmacists are always ready to help!</p> -->
-                        </div>
-                    </div>
-                    <div class="service-item">
-                        <div class="rounded-top overflow-hidden">
-                            <img src="img/list_compounding/PetMedicine.jpeg" alt="PetMedicine" class="img-fluid mx-auto d-block" style="max-width: 100%">
-                        </div>
-                        <div class="position-relative bg-light rounded-bottom text-center p-4" >
-                            <h4 class="m-1">Pet Medicine</h4>
-                            <a href="pet_medicine.html">Learn More</a>
-                            <!-- <p style="font-size: 22px;">Questions or concerns? Our pharmacists are always ready to help!</p> -->
-                        </div>
-                    </div>
-                    <div class="service-item">
-                        <div class="rounded-top overflow-hidden">
-                            <img src="img/list_compounding/gastrointestinal.jpg" alt="gastrointestinal" class="img-fluid mx-auto d-block" style="max-width: 100%">
-                        </div>
-                        <div class="position-relative bg-light rounded-bottom text-center p-4" >
-                            <h4 class="m-1">Gastrointestinal Health</h4>
-                            <a href="Gastrointestinal.html">Learn More</a>
-                            <!-- <p style="font-size: 22px;">Questions or concerns? Our pharmacists are always ready to help!</p> -->
-                        </div>
-                    </div>
-                    <div class="service-item">
-                        <div class="rounded-top overflow-hidden">
-                            <img src="img/list_compounding/hair_loss.jpeg" alt="hair_loss" class="img-fluid mx-auto d-block" style="max-width: 100%">
-                        </div>
-                        <div class="position-relative bg-light rounded-bottom text-center p-4" >
-                            <h4 class="m-1">Hair Loss</h4>
-                            <a href="HairLoss.html">Learn More</a>
-                            <!-- <p style="font-size: 22px;">Questions or concerns? Our pharmacists are always ready to help!</p> -->
-                        </div>
-                    </div>
-                    
-                    <div class="service-item">
-                        <div class="rounded-top overflow-hidden">
-                            <img src="img/list_compounding/dermatology.jpeg" alt="dermatology" class="img-fluid mx-auto d-block" style="max-width: 100%">
-                        </div>
-                        <div class="position-relative bg-light rounded-bottom text-center p-4" >
-                            <h4 class="m-1">Dermatology</h4>
-                            <a href="dermatology.html">Learn More</a>
-                            <!-- <p style="font-size: 22px;">Questions or concerns? Our pharmacists are always ready to help!</p> -->
-                        </div>
-                    </div>                     
-                    <div class="service-item">
-                        <div class="rounded-top overflow-hidden">
-                            <img src="img/list_compounding/low_dose.jpg" alt="LowDose" class="img-fluid mx-auto d-block" style="max-width: 100%">
-                        </div>
-                        <div class="position-relative bg-light rounded-bottom text-center p-4" >
-                            <h4 class="m-1">Low Dose Naltrexone</h4>
-                            <a href="LowDose.html">Learn More</a>
-                            <!-- <p style="font-size: 22px;">Questions or concerns? Our pharmacists are always ready to help!</p> -->
-                        </div>
-                    </div>
-                    <div class="service-item">
-                        <div class="rounded-top overflow-hidden">
-                            <img src="img/list_compounding/Pediatrics.jpg" alt="Pediatrics" class="img-fluid mx-auto d-block" style="max-width: 100%">
-                        </div>
-                        <div class="position-relative bg-light rounded-bottom text-center p-4" >
-                            <h4 class="m-1">Pediatrics</h4>
-                            <a href="Pediatrics.html">Learn More</a>
-                            <!-- <p style="font-size: 22px;">Questions or concerns? Our pharmacists are always ready to help!</p> -->
-                        </div>
-                    </div>
-                    <div class="service-item">
-                        <div class="rounded-top overflow-hidden">
-                            <img src="img/list_compounding/wound_care.jpg" alt="wound_care" class="img-fluid mx-auto d-block" style="max-width: 100%">
-                        </div>
-                        <div class="position-relative bg-light rounded-bottom text-center p-4" >
-                            <h4 class="m-1">Wound & Scar Care</h4>
-                            <a href="wound_care.html">Learn More</a>
-                            <!-- <p style="font-size: 22px;">Questions or concerns? Our pharmacists are always ready to help!</p> -->
-                        </div>
-                    </div>
-                    <!-- end -->
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End clickable slider -->
-
-
-
-
-    <!-- Service Start -->
-    <!-- <div class="container-fluid m-2 pb-5 wow fadeIn" data-wow-delay="0.1s"> -->
-    <div class="container-fluid pb-5">
-            <div class="container">
-            <div class="row mb-5">
-                    <div class="section-title">
-                        <h1 class="position-relative text-uppercase" style="color: #085371; display: block; text-align: center;">Why Join Us?</h1>
-                        <!-- <h1 class="display-5 mb-0">We Offer The Best Quality Dental Services</h1> -->
-                    </div>
-                    <div class="row g-3">
-                        <div class="col-lg-4 col-md-6">
+                <div class="card_grp">
+                    <div id="relatedScroll" class="related-scroll d-flex">
+                        <div class="service-item">
                             <div class="rounded-top overflow-hidden">
-                                <!-- <img class="img-fluid" src="img/icon/111.png" alt=""> -->
-                                 <img src="img/icon/free_delivery.jpg" alt="free_delivery" class="img-fluid mx-auto d-block">
-                            </div>
-                            <div class="position-relative bg-light rounded-bottom text-center p-4" style="min-height: 295px;">
-                                <h3 class="m-3">Free Delivery</h3>
-                                <p style="font-size: 22px;">We Offer Stress Free Delivery Straight to your door, Same as pickup price without the pick-up hassles.</p>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6">
-                            <div class="rounded-top overflow-hidden">
-                                <img src="img/icon/our_support_your_savings22.jpg" alt="our_support_your_savings22" class="img-fluid mx-auto d-block">
+                                <img src="img/list_compounding/hormone.webp" alt="hormone" class="img-fluid mx-auto d-block" loading="lazy" width="364" height="243">
                             </div>
                             <div class="position-relative bg-light rounded-bottom text-center p-4">
-                                <h3 class="m-3">Our Support, Your Savings</h3>
-                                <p style="font-size: 22px;">Before you checkout, you can trust that we’ve checked-into any applicable discounts or credits. The difference can save you big dollars.</p>
+                                <h3 class="m-1">Hormone Therapy</h3>
+                                <a href="hormone.html">Learn More</a>
+                                <!-- <p style="font-size: 22px;">Questions or concerns? Our pharmacists are always ready to help!</p> -->
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-6">
+                        <div class="service-item">
                             <div class="rounded-top overflow-hidden">
-                                <img src="img/icon/ask_pharmacist.jpg" alt="ask_pharmacist" class="img-fluid mx-auto d-block">
+                                <img src="img/list_compounding/anti_aging.webp" alt="anti_aging" class="img-fluid mx-auto d-block" loading="lazy" width="364" height="243">
                             </div>
-                            <div class="position-relative bg-light rounded-bottom text-center p-4" style="min-height: 295px;">
-                                <h3 class="m-3">Ask a Pharmacist</h3>
-                                <p style="font-size: 22px;">Questions or concerns? Our pharmacists are always ready to help!</p>
-                            </div>
-                        </div>
-                    </div>
-            </div>
-            </div>
-        </div>
-    </div>
-    <!-- Service End -->
-
-
-    <!-- Service Start -->
-    <!-- <div class="container-fluid mb-3 wow fadeIn" data-wow-delay="0.1s" style="background-color: #EEF9FF;"> -->
-    <div class="container-fluid mb-3">
-        <div class="container">
-            <div class="row g-5 mb-5">
-                    <div class="section-title mb-5">
-                        <h1 class="position-relative text-uppercase" style="color: #085371; display: block; text-align: center;">How to Join Us?</h1>
-                        <!-- <h1 class="display-5 mb-0">We Offer The Best Quality Dental Services</h1> -->
-                    </div>
-                    <div class="row">
-                        <div class="col-md-4">
-                            <div class="playa_work rounded-top overflow-hidden">
-                                <!-- <img class="img-fluid" src="img/icon/111.png" alt=""> -->
-                                 <img src="img/pic/img1.png" alt="img1">
-                            </div>
-                            <div class="position-relative rounded-bottom text-center p-4" style="min-height: 295px;">
-                                <h3 class="m-3" style="border-bottom: 1px solid; padding: 10px 0; color: #085371;">Step 1</h3>
-                                <p style="font-size: 22px; color: white; color: black; text-align: center; font-weight: 400; ">Should you receive an order for prescription medication after your next office visit, simply inform your physician that you would like it filled at Playa Pharmacy.</p>
+                            <div class="position-relative bg-light rounded-bottom text-center p-4">
+                                <h3 class="m-1">Anti-Aging</h3>
+                                <a href="Anti-Aging.html">Learn More</a>
+                                <!-- <p style="font-size: 22px;">Before you checkout, you can trust that we’ve checked-into any applicable discounts or credits. The difference can save you big dollars.</p> -->
                             </div>
                         </div>
-                        <div class="col-md-4">
-                            <div class="playa_work rounded-top overflow-hidden">
-                                <img src="img/pic/img2.png" alt="img2">
+                        <div class="service-item">
+                                    <div class="rounded-top overflow-hidden">
+                                <img src="img/list_compounding/pain_management.webp" alt="pain_management" class="img-fluid mx-auto d-block" loading="lazy" width="364" height="243">
                             </div>
-                            <div class="position-relative rounded-bottom text-center p-4">
-                                <h3 class="m-3" style="border-bottom: 1px solid; padding: 10px 0; color: #085371">Step 2</h3>
-                                <p style="font-size: 22px; color: white; color: black; text-align: center; font-weight: 400; ">You can also have existing prescriptions currently filled at another pharmacy transferred to us by request at no additional charge. Let us know and we’ll make it so!</p>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="playa_work rounded-top overflow-hidden">
-                                <img src="img/pic/img3.png" alt="Teamwork">
-                            </div>
-                            <div class="position-relative rounded-bottom text-center p-4" style="min-height: 295px;" id="faq_selection">
-                                <h3 class="m-3" style="border-bottom: 1px solid; padding: 10px 0; color: #085371;">Step 3</h3>
-                                <p style="font-size: 22px; color: white;  color: black; text-align: center; font-weight: 400; ">Give us a call by phone or visit in-person to learn more about Playa Pharmacy. We’re open Mondays through Fridays, 9am-6.30pm; Saturdays, 10am-3pm; closed Sundays.</p>
+                            <div class="position-relative bg-light rounded-bottom text-center p-4">
+                                <h3 class="m-1">Pain Management</h3>
+                                <a href="Pain_Management.html">Learn More</a>
+                                <!-- <p style="font-size: 22px;">Before you checkout, you can trust that we’ve checked-into any applicable discounts or credits. The difference can save you big dollars.</p> -->
                             </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Service End -->
-
-    <!-- FAQ -->
-    <div class="container faq-container mb-3">
-        <h1 class="text-center mb-4" style="color: #085371;" >Frequently Asked Questions</h1>
-        <div class="accordion" id="faqAccordion">
-            <div class="accordion-item">
-                <h2 class="accordion-header">
-                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1" aria-expanded="true" aria-controls="faq1">
-                        <i class="fas fa-question-circle faq-icon"></i>I can't make it into your pharmacy, can you send me my medications?
-                    </button>
-                </h2>
-                <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
-                    <div class="accordion-body">
-                        Yes, we provide free local delivery and free shipping anywhere in the state of California.
-                        <!-- Our commitment to innovation, quality, and customer satisfaction sets us apart. We leverage cutting-edge technologies to deliver tailored solutions that exceed expectations. -->
-                    </div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2" aria-expanded="false" aria-controls="faq2">
-                        <i class="fas fa-lightbulb faq-icon"></i>How is quality assured?
-                    </button>
-                </h2>
-                <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                    <div class="accordion-body">
-                        <li>Staff is trained and certified by the compounding pharmacist</li>
-                        <li>There are three checkpoints for reach Rx</li>
-                        <li>We randomly send samples to independent labs to ensure potency of medication</li>
-                        <li>We are members of PPCA and follow their guidelines which are set by a nationally recognized team of scientists</li>
-                    </div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3" aria-expanded="false" aria-controls="faq3">
-                        <i class="fas fa-users faq-icon"></i>How is compounding different from pharmaceutical manufacturing?
-                    </button>
-                </h2>
-                <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                    <div class="accordion-body">
-                        When the strength, form or ingredient you need is not commercially available then you may need Compounded Medications
-                    </div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4" aria-expanded="false" aria-controls="faq4">
-                        <i class="fas fa-shield-alt faq-icon"></i>How do I get a compounded medication?
-                    </button>
-                </h2>
-                <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                    <div class="accordion-body">
-                        You can contact us and we will consult with you and then we will consult directly with your doctor to write a prescription and confirm the best option for your health
-                    </div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5" aria-expanded="false" aria-controls="faq5">
-                        <i class="fas fa-rocket faq-icon"></i>Why You May Need Compounded Medications?
-                    </button>
-                </h2>
-                <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                    <div class="accordion-body">
-                        <li>If you have unwanted pain medication side effects (drowsiness, stomach discomfort, or dependency risk)</li>
-                        <li>If you have an ingredient sensitivity or allergy</li>
-                        <li>If you a woman going through menopause or have a hormone imbalance</li>
-                        <li>If you are a man going through andropause or have a hormone imbalance</li>
-                        <li>Your pet won’t swallow their medication tablets.</li>
-                        <li>When a manufactured drug that was working for you, has been discontinued</li>
-                        <li>If you can’t swallow pills</li>
-                        <li>If your current medication is not providing the results you would expect</li>
+                        
+                        <div class="service-item">
+                            <div class="rounded-top overflow-hidden">
+                                <img src="img/list_compounding/dental_health.webp" alt="dental_health" class="img-fluid mx-auto d-block" loading="lazy" width="364" height="243">
+                            </div>
+                            <div class="position-relative bg-light rounded-bottom text-center p-4" >
+                                <h3 class="m-1">Dental Health</h3>
+                                <a href="dental_health.html">Learn More</a>
+                                <!-- <p style="font-size: 22px;">Questions or concerns? Our pharmacists are always ready to help!</p> -->
+                            </div>
+                        </div>
+                        <div class="service-item">
+                            <div class="rounded-top overflow-hidden">
+                                <img src="img/list_compounding/weight_management.webp" alt="weight_management" class="img-fluid mx-auto d-block" loading="lazy" width="364" height="243">
+                            </div>
+                            <div class="position-relative bg-light rounded-bottom text-center p-4" >
+                                <h3 class="m-1">Weight Management</h3>
+                                <a href="weight_management.html">Learn More</a>
+                                <!-- <p style="font-size: 22px;">Questions or concerns? Our pharmacists are always ready to help!</p> -->
+                            </div>
+                        </div>
+                        <div class="service-item">
+                            <div class="rounded-top overflow-hidden">
+                                <img src="img/list_compounding/PetMedicine.webp" alt="PetMedicine" class="img-fluid mx-auto d-block" loading="lazy" width="364" height="243">
+                            </div>
+                            <div class="position-relative bg-light rounded-bottom text-center p-4" >
+                                <h3 class="m-1">Pet Medicine</h3>
+                                <a href="pet_medicine.html">Learn More</a>
+                                <!-- <p style="font-size: 22px;">Questions or concerns? Our pharmacists are always ready to help!</p> -->
+                            </div>
+                        </div>
+                        <div class="service-item">
+                            <div class="rounded-top overflow-hidden">
+                                <img src="img/list_compounding/gastrointestinal.webp" alt="gastrointestinal" class="img-fluid mx-auto d-block" loading="lazy" width="364" height="243">
+                            </div>
+                            <div class="position-relative bg-light rounded-bottom text-center p-4" >
+                                <h3 class="m-1">Gastrointestinal Health</h3>
+                                <a href="Gastrointestinal.html">Learn More</a>
+                                <!-- <p style="font-size: 22px;">Questions or concerns? Our pharmacists are always ready to help!</p> -->
+                            </div>
+                        </div>
+                        <div class="service-item">
+                            <div class="rounded-top overflow-hidden">
+                                <img src="img/list_compounding/hair_loss.webp" alt="hair_loss" class="img-fluid mx-auto d-block" width="364" height="243" loading="lazy">
+                            </div>
+                            <div class="position-relative bg-light rounded-bottom text-center p-4" >
+                                <h3 class="m-1">Hair Loss</h3>
+                                <a href="HairLoss.html">Learn More</a>
+                                <!-- <p style="font-size: 22px;">Questions or concerns? Our pharmacists are always ready to help!</p> -->
+                            </div>
+                        </div>
+                        
+                        <div class="service-item">
+                            <div class="rounded-top overflow-hidden">
+                                <img src="img/list_compounding/dermatology.webp" alt="dermatology" class="img-fluid mx-auto d-block" width="364" height="243" loading="lazy">
+                            </div>
+                            <div class="position-relative bg-light rounded-bottom text-center p-4" >
+                                <h3 class="m-1">Dermatology</h3>
+                                <a href="dermatology.html">Learn More</a>
+                                <!-- <p style="font-size: 22px;">Questions or concerns? Our pharmacists are always ready to help!</p> -->
+                            </div>
+                        </div>                     
+                        <div class="service-item">
+                            <div class="rounded-top overflow-hidden">
+                                <img src="img/list_compounding/low_dose.webp" alt="low_dose" class="img-fluid mx-auto d-block" width="364" height="243" loading="lazy">
+                            </div>
+                            <div class="position-relative bg-light rounded-bottom text-center p-4" >
+                                <h3 class="m-1">Low Dose Naltrexone</h3>
+                                <a href="low_dose.html">Learn More</a>
+                                <!-- <p style="font-size: 22px;">Questions or concerns? Our pharmacists are always ready to help!</p> -->
+                            </div>
+                        </div>
+                        <div class="service-item">
+                            <div class="rounded-top overflow-hidden">
+                                <img src="img/list_compounding/Pediatrics.webp" alt="Pediatrics" class="img-fluid mx-auto d-block" width="364" height="243" loading="lazy">
+                            </div>
+                            <div class="position-relative bg-light rounded-bottom text-center p-4" >
+                                <h3 class="m-1">Pediatrics</h3>
+                                <a href="Pediatrics.html">Learn More</a>
+                                <!-- <p style="font-size: 22px;">Questions or concerns? Our pharmacists are always ready to help!</p> -->
+                            </div>
+                        </div>
+                        <div class="service-item">
+                            <div class="rounded-top overflow-hidden">
+                                <img src="img/list_compounding/wound_care.webp" alt="wound_care" class="img-fluid mx-auto d-block" width="364" height="243" loading="lazy">
+                            </div>
+                            <div class="position-relative bg-light rounded-bottom text-center p-4" >
+                                <h3 class="m-1">Wound & Scar Care</h3>
+                                <a href="wound_care.html">Learn More</a>
+                                <!-- <p style="font-size: 22px;">Questions or concerns? Our pharmacists are always ready to help!</p> -->
+                            </div>
+                        </div>
+                        <!-- end -->
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- End FAQ -->
-
-    <!-- TEST Contact info -->
-    <div id="contact.html" class="contactpage py-5" style="background: linear-gradient(90deg, #43ab2e 30%, #085371 70%);">
-        <div class="container">
-            <img src="img/dr/per01.png" alt="" >
-            <div class="contactpf">
-                <div class="row align-items-center">
-                <div class="col-md-12 text-light" style="margin-top: 50px;">
-                    <h1 class="mb-3 text-light">Request A Call Back</h1>
-                    <p class="mb-4">Have a question or need assistance? Request a call back, and one of our friendly team members will reach out to you soon.</p>
-                    <form>
-                        <div class="row g-2">
-                            <div class="col-md-6 col-12">
-                                <input type="text" class="form-control border-0 bg-light px-4" placeholder="Your Name" style="height: 55px;">
-                            </div>
-                            <div class="col-md-6 col-12">
-                                <input type="email" class="form-control border-0 bg-light px-4" placeholder="Your Email" style="height: 55px;">
-                            </div>
-                            <div class="col-md-6 col-12">
-                                <input type="tel" class="form-control border-0 bg-light px-4" placeholder="Your Phone Number" style="height: 55px;">
-                            </div>
-                            <div class="col-md-6 col-12">
-                                <input type="text" class="form-control border-0 bg-light px-4" placeholder="Subject" style="height: 55px;">
-                            </div>
-                            <div class="col-12">
-                                <textarea class="form-control border-0 bg-light px-4 py-3" rows="1" placeholder="Message"></textarea>
-                            </div>
-                            <div class="col-12">
-                                <button class="btn btn-primary w-100 py-3" type="submit">Send Message</button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-            </div>
-        </div>
-    </div>
-    <!-- END contact Info -->
+        <!-- End clickable slider -->
 
 
-    <!-- Contact Start -->
-    <div class="container-fluid py-5">
-        <div class="container">
-            <div class="row g-1">
-                <div class="col-xl-6 col-lg-12">
-                    <div class="bg-light rounded h-100 p-5">
+
+
+        <!-- Service Start -->
+        <!-- <div class="container-fluid m-2 pb-5 wow fadeIn" data-wow-delay="0.1s"> -->
+        <div class="container-fluid pb-5">
+                <div class="container">
+                <div class="row mb-5">
                         <div class="section-title">
-                            <h5 class="position-relative d-inline-block text-primary text-uppercase">Contact Us</h5>
-                            <h1 class="display-6 mb-4">Feel Free To Contact Us</h1>
+                            <h2 class="position-relative text-uppercase" style="color: #085371; display: block; text-align: center;">Why Join Us?</h2>
+                            <!-- <h1 class="display-5 mb-0">We Offer The Best Quality Dental Services</h1> -->
                         </div>
-                        <div class="d-flex align-items-center mb-2">
-                            <i class="bi bi-geo-alt fs-1 text-primary me-3"></i>
-                            <div class="text-start">
-                                <h5 class="mb-0">Our Office</h5>
-                                <span>8131 W. Manchester Ave. Playa Del Rey, CA 90293</span>
+                        <div class="row g-3">
+                            <div class="col-lg-4 col-md-6">
+                                <div class="rounded-top overflow-hidden">
+                                    <!-- <img class="img-fluid" src="img/icon/111.png" alt=""> -->
+                                    <img src="img/icon/free_delivery.webp" alt="free_delivery" class="img-fluid mx-auto d-block" loading="lazy">
+                                </div>
+                                <div class="position-relative bg-light rounded-bottom text-center p-4" style="min-height: 295px;">
+                                    <h3 class="m-3">Free Delivery</h3>
+                                    <p style="font-size: 22px;">We Offer Stress Free Delivery Straight to your door, Same as pickup price without the pick-up hassles.</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="rounded-top overflow-hidden">
+                                    <img src="img/icon/our_support_your_savings.webp" alt="our_support_your_savings" class="img-fluid mx-auto d-block" loading="lazy">
+                                </div>
+                                <div class="position-relative bg-light rounded-bottom text-center p-4">
+                                    <h3 class="m-3">Our Support, Your Savings</h3>
+                                    <p style="font-size: 22px;">Before you checkout, you can trust that we’ve checked-into any applicable discounts or credits. The difference can save you big dollars.</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="rounded-top overflow-hidden">
+                                    <img src="img/icon/ask_pharmacist.webp" alt="ask_pharmacist" class="img-fluid mx-auto d-block" loading="lazy">
+                                </div>
+                                <div class="position-relative bg-light rounded-bottom text-center p-4" style="min-height: 295px;">
+                                    <h3 class="m-3">Ask a Pharmacist</h3>
+                                    <p style="font-size: 22px;">Questions or concerns? Our pharmacists are always ready to help!</p>
+                                </div>
                             </div>
                         </div>
-                        <div class="d-flex align-items-center mb-2">
-                            <i class="bi bi-envelope-open fs-1 text-primary me-3"></i>
-                            <div class="text-start">
-                                <h5 class="mb-0">Email Us</h5>
-                                <span><a href="mailto:playapharmacy10@gmail.com" style="color: rgb(134, 134, 134);">playapharmacy10@gmail.com</a></span>
-                            </div>
+                </div>
+                </div>
+            </div>
+        </div>
+        <!-- Service End -->
+
+
+        <!-- Service Start -->
+        <!-- <div class="container-fluid mb-3 wow fadeIn" data-wow-delay="0.1s" style="background-color: #EEF9FF;"> -->
+        <div class="container-fluid mb-3">
+            <div class="container">
+                <div class="row g-5 mb-5">
+                        <div class="section-title mb-5">
+                            <h2 class="position-relative text-uppercase" style="color: #085371; display: block; text-align: center;">How to Join Us?</h2>
+                            <!-- <h1 class="display-5 mb-0">We Offer The Best Quality Dental Services</h1> -->
                         </div>
-                        <div class="d-flex align-items-center">
-                            <i class="bi bi-phone-vibrate fs-1 text-primary me-3"></i>
-                            <div class="text-start">
-                                <h5 class="mb-0">Call Us</h5>
-                                <span><a href="tel:+13108234500">Phone: +1 (310) 823-4500</a></span>
-                                <br>
-                                <span><a href="tel:+13108235700">Fax: +1 (310) 823-5700</a></span>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="playa_work rounded-top overflow-hidden">
+                                    <!-- <img class="img-fluid" src="img/icon/111.png" alt=""> -->
+                                    <img src="img/pic/img1.webp" alt="img1" loading="lazy">
+                                </div>
+                                <div class="position-relative rounded-bottom text-center p-4" style="min-height: 295px;">
+                                    <h3 class="m-3" style="border-bottom: 1px solid; padding: 10px 0; color: #085371;">Step 1</h3>
+                                    <p style="font-size: 22px; color: white; color: black; text-align: center; font-weight: 400; ">Should you receive an order for prescription medication after your next office visit, simply inform your physician that you would like it filled at Playa Pharmacy.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="playa_work rounded-top overflow-hidden">
+                                    <img src="img/pic/img2.webp" alt="img2" loading="lazy">
+                                </div>
+                                <div class="position-relative rounded-bottom text-center p-4">
+                                    <h3 class="m-3" style="border-bottom: 1px solid; padding: 10px 0; color: #085371">Step 2</h3>
+                                    <p style="font-size: 22px; color: white; color: black; text-align: center; font-weight: 400; ">You can also have existing prescriptions currently filled at another pharmacy transferred to us by request at no additional charge. Let us know and we’ll make it so!</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="playa_work rounded-top overflow-hidden">
+                                    <img src="img/pic/img3.webp" alt="img3" loading="lazy">
+                                </div>
+                                <div class="position-relative rounded-bottom text-center p-4" style="min-height: 295px;" id="faq_selection">
+                                    <h3 class="m-3" style="border-bottom: 1px solid; padding: 10px 0; color: #085371;">Step 3</h3>
+                                    <p style="font-size: 22px; color: white;  color: black; text-align: center; font-weight: 400; ">Give us a call by phone or visit in-person to learn more about Playa Pharmacy. We’re open Mondays through Fridays, 9am-6.30pm; Saturdays, 10am-3pm; closed Sundays.</p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+        <!-- Service End -->
 
-                <!-- <div class="col-xl-6 col-lg-12 wow slideInUp" data-wow-delay="0.6s"> -->
-                <div class="col-xl-6 col-lg-12">
-                    <!-- <iframe class="position-relative rounded w-100 h-100"
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3001156.4288297426!2d-78.01371936852176!3d42.72876761954724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4ccc4bf0f123a5a9%3A0xddcfc6c1de189567!2sNew%20York%2C%20USA!5e0!3m2!1sen!2sbd!4v1603794290143!5m2!1sen!2sbd"
-                        frameborder="0" style="min-height: 400px; border:0;" allowfullscreen="" aria-hidden="false"
-                        tabindex="0"></iframe> -->
+        <!-- FAQ -->
+        <div class="container faq-container mb-3">
+            <h1 class="text-center mb-4" style="color: #085371;" >Frequently Asked Questions</h1>
+            <div class="accordion" id="faqAccordion">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1" aria-expanded="true" aria-controls="faq1">
+                            <i class="fas fa-question-circle faq-icon"></i>Can you deliver me my medications?
+                        </button>
+                    </h2>
+                    <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Yes, we provide free local delivery and free shipping anywhere in the state of California.
+                            <!-- Our commitment to innovation, quality, and customer satisfaction sets us apart. We leverage cutting-edge technologies to deliver tailored solutions that exceed expectations. -->
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2" aria-expanded="false" aria-controls="faq2">
+                            <i class="fas fa-lightbulb faq-icon"></i>How is the quality of the compound assured?
+                        </button>
+                    </h2>
+                    <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            <li>We have stringent quality control with checks and analyses</li>
+                            <li>We use quality active ingredients and base purchased from FDA-registered and GMP-certified manufacturers only</li>
+                            <li>We periodically send samples of our compounds to certified labs to assure efficacy and potency</li>
+                            <li>There are multiple check points for our trained staff along the process of completion to assure accuracy</li>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3" aria-expanded="false" aria-controls="faq3">
+                            <i class="fas fa-users faq-icon"></i>What is compounding and how is it different from regular pharmacy dispensed medications?
+                        </button>
+                    </h2>
+                    <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            <li>You need a strength or dose that isn't commercially available</li>
+                            <li>You need a different form, such as a topical cream instead of a pill, or a liquid instead of a capsule</li>
+                            <li>You're allergic or sensitive to an ingredient in the commercial version, such as a dye, gluten, lactose, or preservative</li>
+                            <li>You're experiencing unwanted side effects from a commercial medication, such as drowsiness or stomach discomfort</li>
+                            <li>You're going through menopause or andropause and need hormone therapy in a customized strength or form</li>
+                            <li>A medication you depend on has been discontinued or is affected by a drug shortage — compounding can provide an equivalent formulation so your treatment isn't interrupted</li>
+                            <li>Your child can't swallow pills and needs a flavored liquid or smaller dose</li>
+                            <li>•	Your pet won't take their medication in tablet form</li>
+                            <li>Your current medication isn't providing the results you and your doctor expected</li>
+                            <li>You need a strength or dose that isn't commercially available</li>
+                            <li>You need multiple medications combined into a single preparation</li>
 
-                    <iframe class="position-relative rounded w-100 h-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3309.3166622449658!2d-118.44120562287985!3d33.958699522661405!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2b08abc08a499%3A0xd6d2cc106b495dbb!2s8131%20W%20Manchester%20Ave%2C%20Playa%20Del%20Rey%2C%20CA%2090293%2C%20USA!5e0!3m2!1sen!2sin!4v1770226254482!5m2!1sen!2sin" frameborder="0" style="min-height: 400px; border:0;" allowfullscreen="" aria-hidden="false"
-                        tabindex="0"></iframe>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4" aria-expanded="false" aria-controls="faq4">
+                            <i class="fas fa-shield-alt faq-icon"></i>Why you may need compounding?
+                        </button>
+                    </h2>
+                    <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            You can contact us and we will consult with you and then we will consult directly with your doctor to write a prescription and confirm the best option for your health
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5" aria-expanded="false" aria-controls="faq5">
+                            <i class="fas fa-rocket faq-icon"></i>Why You May Need Compounded Medications?
+                        </button>
+                    </h2>
+                    <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            <li>If you have unwanted pain medication side effects (drowsiness, stomach discomfort, or dependency risk)</li>
+                            <li>If you have an ingredient sensitivity or allergy</li>
+                            <li>If you're woman going through menopause or have a hormone imbalance</li>
+                            <li>If you are a man going through andropause or have a hormone imbalance</li>
+                            <li>Your pet won’t swallow their medication tablets.</li>
+                            <li>When a manufactured drug that was working for you, has been discontinued</li>
+                            <li>If you can’t swallow pills</li>
+                            <li>If your current medication is not providing the results you would expect</li>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- Contact End -->
+        <!-- End FAQ -->
+
+        <!-- TEST Contact info -->
+        <div id="contact.html" class="contactpage py-5" style="background: linear-gradient(90deg, #43ab2e 30%, #085371 70%);">
+            <div class="container">
+                <img src="img/dr/doctor.webp" alt="doctor" loading="lazy">
+                <div class="contactpf">
+                    <div class="row align-items-center">
+                    <div class="col-md-12 text-light" style="margin-top: 50px;">
+                        <h1 class="mb-3 text-light">Request A Call Back</h1>
+                        <p class="mb-4">Have a question or need assistance? Request a call back, and one of our friendly team members will reach out to you soon.</p>
+                        <form>
+                            <div class="row g-2">
+                                <div class="col-md-6 col-12">
+                                    <input type="text" class="form-control border-0 bg-light px-4" placeholder="Your Name" style="height: 55px;">
+                                </div>
+                                <div class="col-md-6 col-12">
+                                    <input type="email" class="form-control border-0 bg-light px-4" placeholder="Your Email" style="height: 55px;">
+                                </div>
+                                <div class="col-md-6 col-12">
+                                    <input type="tel" class="form-control border-0 bg-light px-4" placeholder="Your Phone Number" style="height: 55px;">
+                                </div>
+                                <div class="col-md-6 col-12">
+                                    <input type="text" class="form-control border-0 bg-light px-4" placeholder="Subject" style="height: 55px;">
+                                </div>
+                                <div class="col-12">
+                                    <textarea class="form-control border-0 bg-light px-4 py-3" rows="1" placeholder="Message"></textarea>
+                                </div>
+                                <div class="col-12">
+                                    <button class="btn btn-primary w-100 py-3" type="submit">Send Message</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+        <!-- END contact Info -->
+
+
+        <!-- Contact Start -->
+        <div class="container-fluid py-5">
+            <div class="container">
+                <div class="row g-1">
+                    <div class="col-xl-6 col-lg-12">
+                        <div class="bg-light rounded h-100 p-5">
+                            <div class="section-title">
+                                <h5 class="position-relative d-inline-block text-primary text-uppercase">Contact Us</h5>
+                                <h1 class="display-6 mb-4">Feel Free To Contact Us</h1>
+                            </div>
+                            <div class="d-flex align-items-center mb-2">
+                                <i class="bi bi-geo-alt fs-1 text-primary me-3"></i>
+                                <div class="text-start">
+                                    <h5 class="mb-0">Our Office</h5>
+                                    <span>8131 W. Manchester Ave. Playa Del Rey, CA 90293</span>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center mb-2">
+                                <i class="bi bi-envelope-open fs-1 text-primary me-3"></i>
+                                <div class="text-start">
+                                    <h5 class="mb-0">Email Us</h5>
+                                    <span><a href="mailto:playapharmacy10@gmail.com" style="color: rgb(134, 134, 134);">playapharmacy10@gmail.com</a></span>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <i class="bi bi-phone-vibrate fs-1 text-primary me-3"></i>
+                                <div class="text-start">
+                                    <h5 class="mb-0">Call Us</h5>
+                                    <span><a href="tel:+13108234500">Phone: +1 (310) 823-4500</a></span>
+                                    <br>
+                                    <span><a href="tel:+13108235700">Fax: +1 (310) 823-5700</a></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- <div class="col-xl-6 col-lg-12 wow slideInUp" data-wow-delay="0.6s"> -->
+                    <div class="col-xl-6 col-lg-12">
+
+                        <iframe class="position-relative rounded w-100 h-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3309.3166622449658!2d-118.44120562287985!3d33.958699522661405!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2b08abc08a499%3A0xd6d2cc106b495dbb!2s8131%20W%20Manchester%20Ave%2C%20Playa%20Del%20Rey%2C%20CA%2090293%2C%20USA!5e0!3m2!1sen!2sin!4v1770226254482!5m2!1sen!2sin" frameborder="0" style="min-height: 400px; border:0;" allowfullscreen="" aria-hidden="false"
+                            tabindex="0" title="Playa Pharmacy Location - 8131 W. Manchester Ave. Playa Del Rey"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Contact End -->
+    </main>
 
 
 
     <!-- Footer Start -->
-    <!-- <div class="container-fluid text-light py-5 wow fadeInUp" data-wow-delay="0.3s" style="margin-top: -75px; background-color: #085371;"> -->
     <div class="container-fluid text-light pt-4" style="margin-top: -75px; background-color: #085371;">
         <div class="container pt-4 pb-4">
             <div class="row g-5 pt-4">
                 <div class="col-lg-3 col-md-6">
-                    <img src="img/logo/Playa_logo_Photoroom.png" alt="img_footer" class="img_footer">
+                    <img src="img/logo/Playa_logo.webp" alt="img_footer" class="img_footer" loading="lazy">
                 </div>
                 <div class="col-lg-3 col-md-6 quick-links-padding">
                     <h3 class="text-white mb-4">Quick Links</h3>
@@ -942,10 +1048,10 @@
                 <div class="col-lg-3 col-md-6 ft_social">
                     <h3 class="text-white mb-4">Follow Us</h3>
                     <div class="d-flex">
-                        <a class="btn btn-lg btn-primary btn-lg-square rounded me-2" href="https://www.yelp.com/biz/playa-pharmacy-playa-del-rey-11" target="_blank"><i class="fab fa-yelp fw-normal"></i></a>
-                        <a class="btn btn-lg btn-primary btn-lg-square rounded me-2" href="https://www.facebook.com/playapharmacy/" target="_blank"><i class="fab fa-facebook-f fw-normal"></i></a>
-                        <a class="btn btn-lg btn-primary btn-lg-square rounded me-2" href="https://www.indeed.com/cmp/Playa-Pharmacy" target="_blank"><i class="fab fa-linkedin-in fw-normal"></i></a>
-                        <a class="btn btn-lg btn-primary btn-lg-square rounded" href="https://www.instagram.com/playapharmacy/" target="_blank"><i class="fab fa-instagram fw-normal"></i></a>
+                        <a class="btn btn-lg btn-primary btn-lg-square rounded me-2" href="https://www.yelp.com/biz/playa-pharmacy-playa-del-rey-11" target="_blank" aria-label="Visit us on Yelp"><i class="fab fa-yelp fw-normal"></i></a>
+                        <a class="btn btn-lg btn-primary btn-lg-square rounded me-2" href="https://www.facebook.com/playapharmacy/" target="_blank" aria-label="Visit us on Facebook"><i class="fab fa-facebook-f fw-normal"></i></a>
+                        <a class="btn btn-lg btn-primary btn-lg-square rounded me-2" href="https://www.indeed.com/cmp/Playa-Pharmacy" target="_blank" aria-label="Visit us on Indeed"><i class="fab fa-linkedin-in fw-normal"></i></a>
+                        <a class="btn btn-lg btn-primary btn-lg-square rounded" href="https://www.instagram.com/playapharmacy/" target="_blank" aria-label="Visit us on Instagram"><i class="fab fa-instagram fw-normal"></i></a>
                     </div>
                 </div>
             </div>
@@ -1026,60 +1132,7 @@
         }
 
 
-        // stop autoplay on hover (desktop)
-        relatedScroll.addEventListener("mouseenter", stopAutoScroll);
-        relatedScroll.addEventListener("mouseleave", startAutoScroll);
-    </script>
-    
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "Pharmacy",
-        "name": "Playa Pharmacy",
-        "url": "https://www.playapharmacy.com",
-        "logo": "https://www.playapharmacy.com/img/logo.png",
-        "image": "https://www.playapharmacy.com/img/pharmacy.jpg",
-        "telephone": "+1-310-555-1234",
-        "email": "info@playapharmacy.com",
-        "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "Playa del Rey",
-            "addressLocality": "Los Angeles",
-            "addressRegion": "CA",
-            "postalCode": "90293",
-            "addressCountry": "US"
-        },
-        "geo": {
-            "@type": "GeoCoordinates",
-            "latitude": 33.9599,
-            "longitude": -118.4481
-        },
-        "openingHoursSpecification": [
-            {
-            "@type": "OpeningHoursSpecification",
-            "dayOfWeek": [
-                "Monday",
-                "Tuesday",
-                "Wednesday",
-                "Thursday",
-                "Friday"
-            ],
-            "opens": "09:00",
-            "closes": "18:00"
-            },
-            {
-            "@type": "OpeningHoursSpecification",
-            "dayOfWeek": "Saturday",
-            "opens": "09:00",
-            "closes": "14:00"
-            }
-        ],
-        "priceRange": "$$",
-        "sameAs": [
-            "https://www.facebook.com/playapharmacy",
-            "https://www.instagram.com/playapharmacy"
-        ]
-    }
+        
     </script>
 
 </body>
