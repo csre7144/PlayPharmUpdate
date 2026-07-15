@@ -274,16 +274,17 @@ h6,
     }
 }
 
-/* .img_footer{
-
-    max-width: 100%;
-} */
+.img_footer{
+    width:100%;
+    height:auto;
+    max-width:100%;
+}
 @media (max-width: 768px){
     .banner_pg_i{
         padding-left: 44px;
     }
     .img_footer{
-        width: 85%;
+        /* width: 85%; */
         display: block;
         margin: 0 auto;
     }
