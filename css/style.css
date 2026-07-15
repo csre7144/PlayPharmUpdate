@@ -4,6 +4,7 @@
     --secondary: #F57E57;
     --light: #EEF9FF;
     --dark: #091E3E;
+    --text-primary: #06A3DA;
 }
 
 *{
@@ -36,6 +37,13 @@ h6,
     font-weight: 600;
     transition: .5s;
     font-size: 22px;
+}
+
+.text-primary {
+    color: var(--text-primary) !important;
+}
+.text-start span a{
+    color: var(--text-primary) !important;
 }
 
 .btn-primary,
