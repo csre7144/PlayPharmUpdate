@@ -12,7 +12,7 @@
     <link href="img/logo/Playa_logo_Icon.webp" rel="icon">
 
     <!-- Google Web Fonts -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet"> 
 
     <!-- Icon Font Stylesheet -->
@@ -29,6 +29,9 @@
     <!-- Template Stylesheet -->
     <!-- <link href="css/style.css" rel="stylesheet"> -->
      <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preload" as="image" href="img/banner/banner1.webp">
+    <link rel="preload" as="image" href="img/banner/banner2.webp">
 
     <script type="application/ld+json">
     {
@@ -419,7 +422,7 @@
                                     <div class="col-lg-6 col-md-12 ">
                                         <div class="image-col">
                                             <div class="slide_img_2" >
-                                                <!-- <img src="img/banner/banner1.webp" alt="banner1" fetchpriority="high"> -->
+                                                <img rel="preload" src="img/banner/banner1.webp" alt="banner1" loading="eager" fetchpriority="high">
                                             </div>
                                         </div>
                                     </div>
@@ -505,7 +508,7 @@
                                     <div class="col-lg-6 col-md-12">
                                         <div class="image-col">
                                             <div class="slide_img_1">
-                                                <!-- <img src="img/banner/banner2.webp" alt="banner1" fetchpriority="high"> -->
+                                                <img rel="preload" src="img/banner/banner2.webp" alt="banner1" fetchpriority="high" loading="eager">
                                             </div>
                                         </div>
                                         <!-- <img class="img-fluid rounded wow zoomIn"
@@ -517,19 +520,6 @@
                         </div>
                     </div>
 
-                    <!-- Controls -->
-                    <!-- <button class="carousel-control-prev" type="button"
-                            data-bs-target="#carouselExampleIndicators"
-                            data-bs-slide="prev" aria-label="Previous slide">
-                        <span class="carousel-control-prev-icon"></span>
-                    </button>
-
-                    <button class="carousel-control-next" type="button"
-                            data-bs-target="#carouselExampleIndicators"
-                            data-bs-slide="next" aria-label="Next slide">
-                        <span class="carousel-control-next-icon"></span>
-                    </button> -->
-                    <!-- Previous -->
                     <button
                         class="carousel-control-prev"
                         type="button"
@@ -609,7 +599,7 @@
                             <div class="position-relative bg-light rounded-bottom text-center p-4">
                                 <h3 class="m-1">Hormone Therapy</h3>
                                 <a href="hormone.html">Learn More</a>
-                                <!-- <p style="font-size: 22px;">Questions or concerns? Our pharmacists are always ready to help!</p> -->
+                                <!-- <p style="font-size: 22px;">Before you checkout, you can trust that we’ve checked-into any applicable discounts or credits. The difference can save you big dollars.</p> -->
                             </div>
                         </div>
                         <div class="service-item">
