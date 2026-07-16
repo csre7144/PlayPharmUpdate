@@ -278,12 +278,12 @@ h6 {
         padding-left: 100px;
     }
 }
-.banner_pg img {
+/* .banner_pg img {
     background-position: center center;
     background-size: cover;
     height: 600px;
     width: 100%;
-}
+} */
 .banner-slide {
     min-height: 550px;
 }
@@ -344,14 +344,64 @@ h6 {
 .carousel_ppg {
     margin-top: 50px;
 }
-.banner-row .image-col .slide_img_1 {
-    /* background-image: url("../img/banner/banner2.webp"); */
-    background-size: cover;
+.banner-row .image-col .slide_img_1, .banner-row .image-col .slide_img_2 {
+    position: relative;
+    min-height: 700px;
+    overflow: hidden;
 }
-.banner-row .image-col .slide_img_2 {
-    /* background-image: url("../img/banner/banner1.webp"); */
-    background-size: cover;
+.banner-row .image-col .slide_img_1 img{
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 20% 10%;
+    display: block;
 }
+.banner-row .image-col .slide_img_2 img{
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 20% 10%;
+    display: block;
+}
+
+@media screen and (max-width: 480px) {
+    .banner-row .image-col .slide_img_1 img{
+        min-height: 300px;
+    }
+    .banner-row .image-col .slide_img_2 img{
+        min-height: 300px;
+    }
+}
+
+
+
+/* .banner-row .image-col .slide_img_2 {
+    position: relative;
+    width: 100%;
+    height: 700px;
+    overflow: hidden;
+} */
+
+
+/* .banner-row .image-col .slide_img_1 .img, .banner-row .image-col .slide_img_2 .img {
+    background-image: url('../img/banner/slider0001.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-position: 20% 10%; 
+    background-size: cover;
+    min-height: 700px;
+} */
+/* .banner-row .image-col .slide_img_2{
+    background-image: url('../img/banner/home_banner.jpeg');
+    background-repeat: no-repeat;
+    background-position: 20% 10%; 
+    background-size: cover;
+    min-height: 700px;
+} */
 @media screen and (max-width: 480px) {
     .banner-row .image-col .slide_img_1,
     .banner-row .image-col .slide_img_2 {
@@ -520,7 +570,7 @@ h6 {
     .bannerbg2 .bannerbg2_p {
         padding-bottom: 20px;
     }
-    .bannerbg2 .bannerbg2_img img {
+    /* .bannerbg2 .bannerbg2_img img {
         width: 250px;
-    }
+    } */
 }
