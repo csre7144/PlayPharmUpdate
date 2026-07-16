@@ -66,5 +66,5 @@
         return false;
     });
     
-})(jQuery);
+})
 
