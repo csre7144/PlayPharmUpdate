@@ -574,3 +574,31 @@ h6 {
         width: 250px;
     } */
 }
+
+.text-light a{
+    text-decoration: none;
+}
+.text-primary{
+    text-decoration: none;
+}
+.contact_header p a{
+    text-decoration: none;
+}
+.item2 {
+    align-items: baseline;
+    margin-bottom: 20px;
+    font-size: 22px;
+    font-weight: 700;
+    color: #1f3556;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.item2 a{
+    background-color: green;
+    color: white;
+    padding: 5px 30px;
+    border-radius: 6px;
+    text-decoration: none;
+        margin-top: 20px;
+}
